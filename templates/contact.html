@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+<html lang="en">
+<head>
+    <title>{% block title %}CONTACT{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'contact.css' %}">
+</head>
+<body>
+    <div class="container">
+       
+        <div class="contact">
+            <br><br><br><br>
+            <h1>CONTACT ME</h1>
+            <br>
+            <p>You can contact me on <a href="mailto:shivam241980@example.com">shivam241980@gmail.com</a> or can contact us on Instagram or Telegram or can whatsapp on <a href="tel:9953214480"><br>+919953214480</a> </p>
+            <br>
+            <button class="mcbutt"><a href="help">Call for help?</a></button>
+            <br><br>
+        </div>
+        <div class="main">
+            <div class="bubble"></div>
+            <div class="bubble2"></div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock body %}

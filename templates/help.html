@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+<html lang="en">
+<head>
+    <title>{% block title %}HELP{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'help.css' %}">
+</head>
+<body>
+    <div class="container">
+        
+        <h1 id="h1">Let's Contact</h1>
+        <br><br><br>
+        <div class="help">
+            <div class="cont">
+                <h2>Credentials</h2>
+                <h5>Before asking for help you have to provide your credentials. <br>
+                Please provide your email or phone number in the given form.<br>
+                This data will remain private & secure,so no need to worry about that.<br>
+                <br>
+                    We are asking your information ,so that we may help you or <br>
+                    can contact you when there will be any need !
+                </h5>
+                <br>
+                <h6>Please co-operate</h6>
+            </div>
+            <div class="form">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <h2>Contact Me</h2>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+                    <br><br>
+                    <input type="text" id="email" name="email" placeholder="Email id or phone number">
+                    <br><br>
+                    <input type="submit" id="butt" value="SUBMIT">                
+                </form>
+            </div>
+        </div>
+        <div class="main">
+            <div class="bubble"></div>
+            <div class="bubble2"></div>
+        </div>
+    </div>
+</html>
+{% endblock body %}

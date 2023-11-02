@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin sans',sans-serif;
+
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: translateX(30%) translateY(-70vh);
+        transition: ease-in-out;
+        opacity: 30%;
+    }
+    25%
+    {
+        transform: translateX(32%) translateY(-72vh);
+        transition: ease-in-out;
+    }
+    50%
+    {
+        transform: translateX(34%) translateY(-70vh);
+        transition: ease-in-out;
+    }
+    75%
+    {
+        transform: translateX(33%) translateY(-68vh);
+        transition: ease-in-out;
+    }
+    100%
+    {
+        transform: translateX(30%) translateY(-70vh);
+        transition: ease-in-out;
+        opacity: 30%;
+    }
+   
+}
+
+
+@keyframes animate2{
+    0%
+    {
+        transform: translateX(0%) translateY(-250vh);
+        transition: ease-in-out;
+        opacity: 0%;
+    }
+    25%
+    {
+        transform: translateX(680%) translateY(-200vh);
+        transition: ease-in-out;
+        opacity: 8%;
+    }
+    50%
+    {
+        transform: translateX(340%) translateY(-30vh);
+        transition: ease-in-out;
+    }
+    75%
+    {
+        transform: translateX(10%) translateY(-150vh);
+        transition: ease-in-out;
+    }
+    100%
+    {
+        transform: translateX(50%) translateY(-250vh);
+        opacity: 50%;
+    }
+}
+
+
+.mbutt{
+    border: none;
+    background-color: rgb(244, 8, 75);
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.mcbutt>a{
+    text-decoration: none;
+    background: linear-gradient(90deg,rgb(102, 210, 102),rgba(3, 158, 148, 0.557));
+}
+.mbutt:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.mcontent>button>a{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg,rgb(41, 42, 41),rgb(229, 11, 83));
+}
+
+
+.mcontent>h4,h3{
+    font-weight: lighter;
+    padding: 10px;
+}
+
+
+.mcontent>button{
+    background: linear-gradient(90deg,rgb(41, 42, 41),rgb(229, 11, 83));
+    font-weight: bolder;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.4s;
+}
+.mcontent>button:hover{
+    transform: scale(1.2);
+}
+.contact{
+    text-align: center;
+}
+.cimage{
+    height: 100px;
+}
+.contact>p{
+    width: 300px;
+    margin-left: 40%;
+    padding: 8px;
+    word-spacing: 3px;
+    line-height: 1.2;
+}
+.contact>p>a{
+    text-decoration: none;
+    color: rgb(18, 193, 129);
+}
+.contact>h2{
+    margin: 20px;
+    
+}
+.contact>button{
+    background: linear-gradient(90deg,rgb(102, 210, 102),rgba(3, 158, 148, 0.557));
+    font-weight: bolder;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.4s;
+}

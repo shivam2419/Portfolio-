@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio | {% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
+</head>
+
+<body>
+    <div class="block_header">
+        <nav>
+            <div class="left_nav">
+                <img src="{% static 'user.jpg' %}" alt="">
+                <h1>MyPort</h1>
+            </div>
+            <ul class="block_ul">
+                <li><a href="index">Home</a></li>
+                <li><a href="aboutme">About me</a></li>
+                <li><a href="index">Services</a></li>
+                <li><a href="project">Projects</a></li>
+            </ul>
+            <button type="button" class="block_butt"><a href="contact" class="nav_butt">Contact me</a></button>
+        </nav>
+    </div>
+    <div class="social">
+        <br><br><br>
+        <a href="https://t.me/shivam2419" class="fa fa-telegram"></a>
+        <br><br>
+        <a href="https://twitter.com/shivam241980" class="fa fa-twitter"></a>
+        <br><br>
+        <a href="https://www.instagram.com/_.shivamsharma.__/" class="fa fa-instagram"></a>
+        <br><br>
+        <a href="https://www.linkedin.com/in/shivam-sharma-185940274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging_conversation_detail%3BTncfeodwQra75tyKRtPAYQ%3D%3D" class="fa fa-linkedin"></a>
+    </div>
+    <div class="mi">
+        <div class="mcontent">
+            <h4>Hii,I'm<br>Shivam</h4>
+            <h2>BORN TO BUILD<br>&nbsp&nbsp&nbspSOMETHING SURPASSING</h2>
+            <h3>Request you to join my community <br>to build something great together</h3>
+            <button class="mcbutt"><a href="help" class="a1">Call for help?</a></button>
+        </div>
+        <img src="static/myimg.jpeg" alt="">
+    </div>
+    {% block body %}
+
+    {% endblock body %}
+    <div class="main">
+        <div class="bubble"></div>
+        <div class="bubble2"></div>
+    </div>
+    <div class="footer">
+        <footer>
+            <p>For More Contact :- +91 9953214480 Designed By || <a href="#" class="a"> SHIVAM SHARMA </a>||</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

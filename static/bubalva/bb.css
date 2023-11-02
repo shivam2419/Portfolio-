@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+}
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubble{
+    position: relative;
+    display: flex;
+}
+.bubble div{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: cyan;
+    margin: 0 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgb(75, 35, 170), 
+    0 0 50px cyan,
+    0 0 100px cyan;
+    animation: animate 8s linear infinite;
+    animation-delay: calc(10s/var(--i));
+}
+.bubble div:nth-child(even)
+{
+    background: rgb(250, 5, 140);
+    box-shadow: 0 0 0 5px rgb(149, 6, 104), 
+    0 0 50px rgb(236, 54, 151),
+    0 0 100px rgb(244, 71, 212);
+}
+@keyframes animate {
+    0%{
+        transform: translateY(100vh) scale(0) ;
+    }
+
+    100%{
+        transform: translateY(-20vh) scale(1);
+    }
+    
+}
+
+.pubble{
+    position: relative;
+    display: flex;
+}
+.pubble div{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: cyan;
+    margin: 0 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgb(75, 35, 170), 
+    0 0 50px cyan,
+    0 0 100px cyan;
+    animation: animate 8.1s linear infinite;
+    animation-delay: calc(10s/var(--i));
+}
+.pubble div:nth-child(even)
+{
+    background: rgb(250, 5, 140);
+    box-shadow: 0 0 0 5px rgb(149, 6, 104), 
+    0 0 50px rgb(236, 54, 151),
+    0 0 100px rgb(244, 71, 212);
+}
+@keyframes animate {
+    0%{
+        transform: translateY(100vh) scale(0) ;
+    }
+
+    100%{
+        transform: translateY(-20vh) scale(1);
+    }
+    
+}

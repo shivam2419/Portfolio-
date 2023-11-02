@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+<html lang="en">
+<head>
+    <title>{% block title %}ABOUT{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'aboutme.css' %}">
+    
+</head>
+<body>
+    <div class="html">
+    <div class="ame">
+        <div class="img">
+            <br><br><br><br>
+            <img src="static/myimg.jpeg" alt="">
+        </div>
+        <div class="talks">
+            <br><br><br><br>
+            <h1>ABOUT ME</h1>
+            <h5>I'm a computer science student who's learning things <br>to develop something terrible.</h5>
+            <p>
+                I enjoy taking complex problems and turning them into easy one, it opens up my mind and motivates me towards positivity.I also love the logic and structure of coding and always strive to write elegent and efficient code,whether it be HTML,CSS,JS or PYTHON.
+                <br><br>
+                When i'm not coding or building coding logics , you'll find me in the gym or reading books.
+            </p>
+            <h3>Educational qualifications</h3>
+            <p>
+                Pursuing BTech in CSE from <a href="https://www.glbitm.org/"> GL Bajaj institute of technology and managment . </a>Completed diploma in CSE from <a href="https://rjgp.edu.in/"> Raja jait singh government polytechinque.</a>
+                Secondary education from <a href="">Modern vidya mandir sr. sec. school</a> 
+            </p>
+            <h3>SKILLS</h3>
+            <p>
+                Besides schooling and college life , i have learnt some skills onwards.
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Python</li>
+                    <li>Php</li>
+                    <li>Django</li>
+                    <li>MySQL</li>
+                </ul>
+            </p>
+
+        </div>
+        
+    </div>
+
+    <div class="thanks">
+        <h3><a href="main1.html">Thanks for reading About Me </a></h3>
+    </div>
+    <div class="main">
+        <div class="bubble"></div>
+        <div class="bubble2"></div>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
+{% endblock body %}

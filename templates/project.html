@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+<html lang="en">
+<head>
+    <title>{% block title %}PROJECTS{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'project.css' %}">
+    
+</head>
+<body>
+    <div class="container">
+       
+        <h2 class="mh2" >PROJECTS</h2>
+        <br><br><br>
+        <div class="middle">
+            <div class="Django">
+                <div class="card" style="width: 16rem;">
+                    <img src="{% static 'django.png'%}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Django</h3>
+                      <p class="card-text">
+                        <li>School Website</li>
+                        <li>Portfolio</li>
+                        
+                      </p>
+                      <br><br><br><br>
+                      <a href="#" class="btn btn-primary">Know more...</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="javascript">
+                <div class="card" style="width: 16rem;">
+                    <img src="{% static 'javas.png'%}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">JavaScript</h3>
+                      <p class="card-text">
+                        <li>Racing Game</li>
+                        <li>Restraunt Website</li>
+                        <li>Calculator</li>
+                        <li>Basic Websites</li>
+                      </p>
+                      <br><br>
+                      <a href="#" class="btn btn-primary">Know more...</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="python">
+                <div class="card" style="width: 16rem;">
+                    <img src="{% static 'python.png'%}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Python</h3>
+                      <p class="card-text">
+                        <li>Age calculator</li>
+                        <li>WhatsApp bot</li>
+                        <li>Rock Paper Scissors Game</li>
+                        <li>Snake Game</li>
+                      </p>
+                      <br><br>
+                      <a href="#" class="btn btn-primary">Know more...</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="php">
+                <div class="card" style="width: 16rem;">
+                    <img src="{% static 'php.jpg'%}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Php</h3>
+                      <p class="card-text">
+                        <li>Cafe Website</li>
+                        <li>Attendance managment system</li>
+                        <li>Quiz application</li>
+                        <li>Basic Website</li>
+                      </p>
+                      <br><br>
+                      <a href="#" class="btn btn-primary">Know more...</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+        <br><br><br>
+     
+    </div>  
+</body>
+</html>
+{% endblock body%}

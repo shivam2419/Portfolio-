@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+<head>
+    <title>{% block title %}HOME{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="smi">
+            <br><br>
+            <h4>Trusted by industries </h4>
+            <br><br>
+            <ul>
+                <li><a href="">Web DevOp</a></li>
+                <li><a href="">Machine Learning</a></li>
+                <li><a href="">Artificial Intelligence</a></li>
+                <li><a href="">Data Science</a></li>
+            </ul>
+        </div>
+        <div class="tmi">
+            <br><br>
+            <div class="head">
+                <h2>Services</h2>
+                <span><h2>&nbspI believe in</h2></span>
+            </div>
+            <br>
+            <p>Hi I'm Shivam. I'm a Software Developer. I create user-<br><br>friendly software for their startups.</p>
+        </div>
+        <div class="skills">
+            <div class="skill1">
+                <img src="static/webdesign.jpg" alt="">
+                <h3><a href="project">WEB DEVOPS</a></h3>
+                <p>I have learnt the concepts of basic web designing like : HTML,CSS & JS with all these i have dip my legs into python with django for more</p>
+            </div>
+            <div class="skill2">
+                <img src="static/seo.jpg" alt="">
+                <h3><a href="project">PYTHON DEVOPS</a></h3>
+                <p>Have learnt python very well with data structure included,and have done many projects in it too..For projects click on the above image </p>
+            </div>
+        
+            <div class="skill3">
+                <img src="static/ai.jpg" alt="">
+                <h3><a href="project">AI & ML</a></h3>
+                <p>Trying to learn AI & ML at basic level will complete it soon too...</p>
+            </div>
+        </div>
+        <div class="skills2">
+            <div class="skill4">
+                <img src="static/ux.jpg" alt="">
+                <h3><a href="project">UI/UX DESIGN</a></h3>
+                <p>UI/UX desinging is on the way ,have done several projects over it...For projects click on the above image</p>
+            </div>
+            <div class="skill5">
+                <img src="static/gui.jpg" alt="">
+                <h3><a href="">GUI APPLICATIONS</a></h3>
+                <p>Have created several GUI applications using python.For knowing about projects click on the above image</p>
+            </div>
+            <div class="skill6">
+                <img src="static/data.png" alt="">
+                <h3><a href="">DATA SCIENCE</a></h3>
+                <p>Have put legs in data science and working over it.</p>
+            </div>
+        </div>    
+    </div>
+</body>
+{% endblock body %}

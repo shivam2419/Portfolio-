@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin sans',sans-serif;
+    color: black;
+}
+
+
+.bubble{
+    position: absolute;
+    background: linear-gradient(rgb(27, 0, 234),rgb(59, 59, 192),rgb(64, 134, 225),rgb(117, 191, 220));
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 0 5px rgb(208, 109, 126),;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        transform: translateX(30%) translateY(-150vh);
+        transition: ease-in-out;
+        opacity: 30%;
+    }
+    25%
+    {
+        transform: translateX(32%) translateY(-152vh);
+        transition: ease-in-out;
+    }
+    50%
+    {
+        transform: translateX(34%) translateY(-150vh);
+        transition: ease-in-out;
+    }
+    75%
+    {
+        transform: translateX(33%) translateY(-148vh);
+        transition: ease-in-out;
+    }
+    100%
+    {
+        transform: translateX(30%) translateY(-150vh);
+        transition: ease-in-out;
+        opacity: 30%;
+    }
+   
+}
+
+.bubble2{
+    position: absolute;
+    background: linear-gradient(rgb(217, 0, 251),rgb(236, 78, 226));
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 0 1px rgb(208, 109, 126),
+    0 0 20px rgb(204, 30, 152),
+    0 0 10px rgb(244, 47, 100);
+    border-radius: 50%;
+    animation: animate2 20s linear infinite;
+}
+@keyframes animate2{
+    0%
+    {
+        transform: translateX(0%) translateY(-250vh);
+        transition: ease-in-out;
+        opacity: 0%;
+    }
+    25%
+    {
+        transform: translateX(680%) translateY(-200vh);
+        transition: ease-in-out;
+        opacity: 8%;
+    }
+    50%
+    {
+        transform: translateX(340%) translateY(-10vh);
+        transition: ease-in-out;
+    }
+    75%
+    {
+        transform: translateX(10%) translateY(-150vh);
+        transition: ease-in-out;
+    }
+    100%
+    {
+        transform: translateX(50%) translateY(-280vh);
+        opacity: 50%;
+    }
+}
+.block_header{
+    height: 20vh;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.block_header>nav>.left_nav
+{
+    display: flex;
+}
+nav .left_nav >h1{
+    font-size: 40px;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.block_header>nav>.left_nav>img{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+    
+}
+.block_ul>li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.block_ul>li>a{
+    font-weight: lighter;
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+.block_ul>li>a:hover{
+    color:  rgb(8, 244, 189);
+    font-weight: bold;
+}
+.nav_butt{
+    background-color:  rgb(8, 244, 189);
+    text-decoration: none;
+    color: black;
+}
+.block_butt{
+    border: none;   
+    background-color: rgb(8, 244, 189);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-right: 20px;
+}
+.block_butt:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.social{
+    position: fixed;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-telegram {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #000306;
+    color: white;
+  }
+  /* Instagram */
+  .fa-instagram {
+    background: #e35226;
+    color: white;
+  }
+  /* LinkedIn */
+  .fa-linkedin {
+    background: #001c8a;
+    color: white;
+  }
+
+.mi{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mcontent>h4,h3{
+    font-weight: lighter;
+    padding: 10px;
+}
+.mcontent>h2{
+    background: linear-gradient(90deg,#05bbf2,#fc00ff);
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.mi>img{
+    height: 300px;
+    position: relative;
+    box-shadow: 0 0 35px  rgb(92, 143, 131);
+    border-radius: 10px;
+    cursor: grab;
+    border-radius: 40px;
+    opacity: 90%;
+}
+
+.mi>img:hover{
+    opacity: 40%;
+
+}
+
+
+.footer{
+    border: none;
+    margin: 15px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer>p,footer>p>a{
+    background-color: gray;
+    padding: 5px;
+}
